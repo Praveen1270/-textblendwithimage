@@ -1,0 +1,26 @@
+{
+  "rewrites": [
+    {
+      "source": "/editor",
+      "destination": "/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/editor",
+      "destination": "/",
+      "statusCode": 307
+    }
+  ],
+  "headers": [
+    {
+      "source": "/*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    }
+  ]
+}
